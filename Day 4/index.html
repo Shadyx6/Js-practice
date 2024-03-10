@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .datacontainer {
+            background-image: url('https://images.pexels.com/photos/1738675/pexels-photo-1738675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-position: center;
+            background-size: cover;
+        }
+    </style>    
+</head>
+<body>
+    <div class="mainwrapper h-screen w-screen bg-black">
+        <div class="section h-[30rem] w-[30vw] bg-green-200 absolute mt-24 left-[50%] -translate-x-1/2 rounded-lg">
+            <form class="form flex px-12 py-10 gap-6">
+                <input class="City h-10 px-4" type="search" name="City" placeholder="Search for any city ">
+                <button class="btn text-xl whitespace-nowrap bg-blue-200 py-2 px-8 rounded-lg" type="submit">Get Weather</button>
+            </form>
+            <div class="datacontainer h-[60%] w-[80%] bg-black ml-12 ">
+                <div class="info absolute left-[50%] -translate-x-1/2 top-[35%] z-index-10 flex gap-5 flex-col items-center ">
+                <h2 class="cityname text-4xl">Florida</h2>
+                <h1 class="temp whitespace-nowrap text-4xl">28C</h1>
+                <h3 class="humidity">Humidity: 20%</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
